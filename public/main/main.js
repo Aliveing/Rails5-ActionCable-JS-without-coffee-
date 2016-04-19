@@ -68,14 +68,16 @@ function submit(button){
     //    name:name,
     //    message:content
     //});
-    loadXMLDoc('post','/chat/create',{
-        name:name,
-        message:content
-    },function(res){
-        console.log(res);
-    },function(res){
-        console.log(res);
-    })
+    var obj = {name:name, content:content};
+    socket.send(JSON.stringify(obj));
+    //loadXMLDoc('post','/chat/create',{
+    //    name:name,
+    //    message:content
+    //},function(res){
+    //    console.log(res);
+    //},function(res){
+    //    console.log(res);
+    //})
 }
 
 window.onload = init;

@@ -10548,3 +10548,259 @@ Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:14:12 +0800
 Started GET "/cable" for 127.0.0.1 at 2016-04-19 18:14:12 +0800
 Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:14:12 +0800
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/chat/create" for 127.0.0.1 at 2016-04-19 18:16:39 +0800
+Processing by ChatController#create as */*
+Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`created_at`, `updated_at`) VALUES ('2016-04-19 10:16:39', '2016-04-19 10:16:39')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to chat_channel: {:message=>nil}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.4ms)
+
+
+  
+NoMethodError (undefined method `fetch' for nil:NilClass):
+  
+app/controllers/chat_controller.rb:11:in `create'
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.6ms)
+Started POST "/chat/create" for 127.0.0.1 at 2016-04-19 18:18:02 +0800
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ChatController> at /Users/Alive/Documents/Workspace/Usual/Rails/Rails5-Websocket-just-try-/app/controllers/chat_controller.rb:3)
+Processing by ChatController#create as */*
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`created_at`, `updated_at`) VALUES ('2016-04-19 10:18:02', '2016-04-19 10:18:02')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to chat_channel: {:message=>nil}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 3.9ms)
+
+
+  
+NoMethodError (undefined method `fetch' for nil:NilClass):
+  
+app/controllers/chat_controller.rb:12:in `create'
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.0ms)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:18:34 +0800
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 18:18:34 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:18:35 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/chat/create" for 127.0.0.1 at 2016-04-19 18:18:40 +0800
+Processing by ChatController#create as */*
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `messages` (`created_at`, `updated_at`) VALUES ('2016-04-19 10:18:40', '2016-04-19 10:18:40')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] Broadcasting to chat_channel: {:message=>nil}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 4.0ms)
+
+
+  
+NoMethodError (undefined method `fetch' for nil:NilClass):
+  
+app/controllers/chat_controller.rb:12:in `create'
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.6ms)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:20:09 +0800
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 18:20:09 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:20:09 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from <top (required)> at /Users/Alive/Documents/Workspace/Usual/Rails/Rails5-Websocket-just-try-/config/environment.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/abstract_controller/callbacks.rb:191)
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from block (2 levels) in <module:ClassMethods> at /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/abstract_controller/callbacks.rb:191)
+Started GET "/" for 127.0.0.1 at 2016-04-19 18:25:08 +0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /usr/local/lib/ruby/gems/2.2.0/gems/activerecord-5.0.0.beta3/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ChatController#root as HTML
+Redirected to http://localhost:3001/main/index
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 18:25:09 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:25:09 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:25:12 +0800
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 18:29:27 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:29:27 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from <top (required)> at /Users/Alive/Documents/Workspace/Usual/Rails/Rails5-Websocket-just-try-/config/environment.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <top (required)> at /Users/Alive/Documents/Workspace/Usual/Rails/Rails5-Websocket-just-try-/app/controllers/application_controller.rb:1)
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from <top (required)> at /Users/Alive/Documents/Workspace/Usual/Rails/Rails5-Websocket-just-try-/app/controllers/application_controller.rb:1)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/Alive/Documents/Workspace/Usual/Rails/Rails5-Websocket-just-try-/app/models/application_record.rb:1)
+DEPRECATION WARNING: alias_method_chain is deprecated. Please, use Module#prepend instead. From module, you can access the original method using super. (called from <top (required)> at /Users/Alive/Documents/Workspace/Usual/Rails/Rails5-Websocket-just-try-/config/environment.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/abstract_controller/callbacks.rb:191)
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from block (2 levels) in <module:ClassMethods> at /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/abstract_controller/callbacks.rb:191)
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 18:30:55 +0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /usr/local/lib/ruby/gems/2.2.0/gems/activerecord-5.0.0.beta3/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 18:30:55 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 19:00:28 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:28 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable111" for 127.0.0.1 at 2016-04-19 19:00:34 +0800
+Started GET "/cable/111" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:34 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable111" for 127.0.0.1 at 2016-04-19 19:00:37 +0800
+Started GET "/cable/111" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:37 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cab1231231le" for 127.0.0.1 at 2016-04-19 19:00:41 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/cab1231231le"):
+  
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.alpha) lib/rack/method_override.rb:22:in `call'
+rack (2.0.0.alpha) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.beta3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.alpha) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.beta3) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (334.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (3749.3ms)
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 19:00:50 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:50 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/111" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:55 +0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:55 +0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:55 +0800
+Finished "/cable/111" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:55 +0800
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:55 +0800
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 19:00:55 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:00:55 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:01:28 +0800
+Started GET "/cable1" for 127.0.0.1 at 2016-04-19 19:01:28 +0800
+Started GET "/cable/1" [WebSocket] for 127.0.0.1 at 2016-04-19 19:01:28 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/1" [WebSocket] for 127.0.0.1 at 2016-04-19 19:01:50 +0800
+Started GET "/1231231cable1" for 127.0.0.1 at 2016-04-19 19:01:50 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/1231231cable1"):
+  
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.alpha) lib/rack/method_override.rb:22:in `call'
+rack (2.0.0.alpha) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.beta3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.alpha) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.beta3) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (11.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.3ms)
+Started GET "/abc" for 127.0.0.1 at 2016-04-19 19:02:00 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/abc"):
+  
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.alpha) lib/rack/method_override.rb:22:in `call'
+rack (2.0.0.alpha) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.beta3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.alpha) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.beta3) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (9.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.4ms)
+Started GET "/cablea" for 127.0.0.1 at 2016-04-19 19:02:08 +0800
+Started GET "/cable/a" [WebSocket] for 127.0.0.1 at 2016-04-19 19:02:08 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/a" [WebSocket] for 127.0.0.1 at 2016-04-19 19:02:15 +0800
+Started GET "/acablea" for 127.0.0.1 at 2016-04-19 19:02:15 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/acablea"):
+  
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.beta3) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.beta3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.alpha) lib/rack/method_override.rb:22:in `call'
+rack (2.0.0.alpha) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.beta3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/load_interlock.rb:13:in `call'
+actionpack (5.0.0.beta3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.alpha) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.beta3) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (8.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.beta3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.7ms)
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 19:04:12 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:04:12 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
