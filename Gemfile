@@ -18,6 +18,7 @@ gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #gem 'rails', '4.2.5'
 #gem 'activesupport', '4.2.5'
+#gem 'rake','>= 0.8.7'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -47,7 +48,6 @@ gem 'nokogiri','~> 1.6.0'
 gem 'concurrent-ruby','~> 1.0'
 gem 'minitest','~> 5.1'
 gem 'rails-html-sanitizer','~> 1.0'
-gem 'rake','>= 0.8.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

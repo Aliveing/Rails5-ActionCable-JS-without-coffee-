@@ -34,6 +34,7 @@ function loadXMLDoc(method,url,params,success,failure) {
         };
         xhr.open(method,url,true);
         if(method === "POST"){
+            xhr.
             xhr.send(params);
         }
         xhr.send(null);

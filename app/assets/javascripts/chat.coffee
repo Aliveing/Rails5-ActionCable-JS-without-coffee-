@@ -3,9 +3,11 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 App.chat = App.cable.subscriptions.create "ChatChannel",
   connected: ->
+    alert "connect"
 # Called when the subscription is ready for use on the server
 
   disconnected: ->
+    alert "disconnect"
 # Called when the subscription has been terminated by the server
 
   received: (data) ->
