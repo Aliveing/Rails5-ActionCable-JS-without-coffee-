@@ -1,0 +1,9 @@
+I"Ä(function() {
+  App.simple = App.cable.subscriptions.create("SimpleChannel", {
+    connected: function() {},
+    disconnected: function() {},
+    received: function(data) {}
+  });
+
+}).call(this);
+:ET

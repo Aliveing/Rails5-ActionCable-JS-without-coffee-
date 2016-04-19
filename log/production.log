@@ -1,0 +1,1 @@
+D, [2016-04-18T15:46:16.299471 #1376] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
