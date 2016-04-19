@@ -1,6 +1,22 @@
 /**
  * Created by Alive on 16/4/19.
  */
+
+var socket = (function(){
+    var socket = new WebSocket('ws://localhost:3001/cable');
+
+    socket.onopen = function(event){
+        socket.send();
+    };
+    socket.onmessage = function(event){
+        console.log('receive a message');
+    };
+    socket.onclose = function(event){
+        console.log('E.., close.');
+    };
+    return socket;
+})();
+
 function loadXMLDoc(method,url,params,success,failure) {
     var xhr = null;
     if (window.XMLHttpRequest)
@@ -46,10 +62,14 @@ function state_Change(xhr,success,failure)
 function submit(button){
     var parent = button.parentNode;
     var name = parent.querySelector('input[name=name]').value;
-    var message = parent.querySelector('input[name=message]').value;
+    var content = parent.querySelector('input[name=content]').value;
+    //socket.send({
+    //    name:name,
+    //    message:content
+    //});
     loadXMLDoc('post','/chat/create',{
         name:name,
-        message:message
+        message:content
     },function(res){
         console.log(res);
     },function(res){
@@ -61,18 +81,21 @@ window.onload = init;
 
 function init(){
     var message = document.querySelector('div.message');
-    loadXMLDoc('GET','/chat/get_all',null,
-        function(ret){
-            var json = JSON.parse(ret);
-            if(json.success){
-                console.log(json.data);
-            }else{
-                console.log(json.msg);
-            }
-        },
-        function(ret){
-            console.log(ret);
-        }
-    )
+    //socket.close();
+    //loadXMLDoc('GET','/chat/get_all',null,
+    //    function(ret){
+    //        var json = JSON.parse(ret);
+    //        if(json.success){
+    //            console.log(json.data);
+    //        }else{
+    //            console.log(json.msg);
+    //        }
+    //    },
+    //    function(ret){
+    //        console.log(ret);
+    //    }
+    //)
 }
+
+
 

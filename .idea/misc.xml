@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="id" value="1457096289078" />
+    <option name="name" value="default" />
+  </component>
   <component name="JsBowerSettings">
     <exe-path />
     <config-path />
-  </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="Alive" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
