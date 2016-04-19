@@ -64,10 +64,6 @@ function submit(button){
     var parent = button.parentNode;
     var name = parent.querySelector('input[name=name]').value;
     var content = parent.querySelector('input[name=content]').value;
-    //socket.send({
-    //    name:name,
-    //    message:content
-    //});
     var obj = {name:name, content:content};
     socket.send(JSON.stringify(obj));
     //loadXMLDoc('post','/chat/create',{

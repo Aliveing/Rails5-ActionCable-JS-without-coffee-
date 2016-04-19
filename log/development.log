@@ -10804,3 +10804,15 @@ Started GET "/cable" for 127.0.0.1 at 2016-04-19 19:04:12 +0800
 Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:04:12 +0800
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Started GET "/" for 127.0.0.1 at 2016-04-19 19:16:04 +0800
+Processing by ChatController#root as HTML
+Redirected to http://localhost:3001/main/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2016-04-19 19:16:04 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-19 19:16:04 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Received unrecognized command in {"name"=>"c", "content"=>"d"}
+Received unrecognized command in {"name"=>"a", "content"=>"b"}
+Received unrecognized command in {"name"=>"c", "content"=>"d"}
