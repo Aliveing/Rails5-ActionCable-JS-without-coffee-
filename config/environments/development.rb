@@ -20,7 +20,7 @@ Rails.application.configure do
   config.active_support.deprecation = :log
 
   # Allow localhost
-  Rails.application.config.action_cable.allowed_request_origins = ['http://localhost:3001']
+  Rails.application.config.action_cable.allowed_request_origins = ['http://localhost:3001','http://192.168.31.249:3001']
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 

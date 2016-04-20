@@ -1,12 +1,13 @@
 /**
  * Created by Alive on 16/4/19.
  */
-
+var arr = parseInt(Math.random()*5);
 var socket = (function(){
-    var socket = new WebSocket('ws://localhost:3001/cable');
+    var url = window.location.host;
+    var socket = new WebSocket('ws://' + url + '/cable');
     var initSocketObj = {
         command:'subscribe',
-        identifier:"{\"channel\":\"ChatChannel\"}"
+        identifier:"{\"channel\":\"ChatChannel\",\"sid\":"+arr+"}"
     };
     socket.onopen = function(event){
         console.log("onOpen =========> " + event);
@@ -18,6 +19,7 @@ var socket = (function(){
         if(message){
             console.log("onOpen =========> " + event.data);
             if(message.refresh){
+                //alert(1);
                 loadAll();
             }
         }
@@ -45,7 +47,6 @@ function loadXMLDoc(method,url,params,success,failure) {
         };
         xhr.open(method,url,true);
         if(method === "POST"){
-            xhr.
             xhr.send(params);
         }
         xhr.send(null);
@@ -77,7 +78,7 @@ function submit(button){
     var content = parent.querySelector('input[name=content]').value;
     var obj = {name:name, content:content};
     var simpleCableObj = {
-        identifier:"{\"channel\":\"ChatChannel\"}",
+        identifier:"{\"channel\":\"ChatChannel\",\"sid\":"+arr+"}",
         command:'message',
         data:JSON.stringify(obj)
     };
