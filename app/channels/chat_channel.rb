@@ -8,8 +8,12 @@ class ChatChannel < ApplicationCable::Channel
     # Any cleanup needed when channel is unsubscribed
   end
 
-  def speak(data)
-    #存储
+  def receive data
     Message.create(content:data['content'],name:data['name'])
+    msg = {
+        content:data["content"],
+        refresh:true
+    }
+    ActionCable.server.broadcast 'chat_channel', msg
   end
 end

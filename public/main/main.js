@@ -13,7 +13,14 @@ var socket = (function(){
         socket.send(JSON.stringify(initSocketObj));
     };
     socket.onmessage = function(event){
-        console.log("onOpen =========> " + event.data);
+        var data = JSON.parse(event.data);
+        var message = data.message;
+        if(message){
+            console.log("onOpen =========> " + event.data);
+            if(message.refresh){
+                loadAll();
+            }
+        }
     };
     socket.onclose = function(event){
         console.log("onOpen =========> " + 'E.., close.');
@@ -70,9 +77,9 @@ function submit(button){
     var content = parent.querySelector('input[name=content]').value;
     var obj = {name:name, content:content};
     var simpleCableObj = {
-        identifier:'_ping',
+        identifier:"{\"channel\":\"ChatChannel\"}",
         command:'message',
-        data:obj
+        data:JSON.stringify(obj)
     };
     socket.send(JSON.stringify(simpleCableObj));
     //loadXMLDoc('post','/chat/create',{
@@ -88,22 +95,34 @@ function submit(button){
 window.onload = init;
 
 function init(){
-    var message = document.querySelector('div.message');
+    loadAll();
     //socket.close();
-    //loadXMLDoc('GET','/chat/get_all',null,
-    //    function(ret){
-    //        var json = JSON.parse(ret);
-    //        if(json.success){
-    //            console.log(json.data);
-    //        }else{
-    //            console.log(json.msg);
-    //        }
-    //    },
-    //    function(ret){
-    //        console.log(ret);
-    //    }
-    //)
 }
 
+function loadAll(){
+    loadXMLDoc('GET','/chat/get_all',null,
+        function(ret){
+            var json = JSON.parse(ret);
+            if(json.success){
+                var data = json.data;
+                refreshMessageDom(data);
+            }else{
+                console.log(json.msg);
+            }
+        },
+        function(ret){
+            console.log(ret);
+        }
+    )
+}
+
+function refreshMessageDom(data){
+    var messageDom = document.querySelector('div.message');
+    var message = '';
+    for(var i = 0; i < data.length; i++){
+        message += "『name:" + data[i].name + ", content:" + data[i].content + "』<br />";
+    }
+    messageDom.innerHTML = message;
+}
 
 

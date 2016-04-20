@@ -8,15 +8,15 @@ class ChatController < ApplicationController
   def create
     # App.chat.speak(params)
     puts params.to_json
-    Message.create(content:params[:content],name:params[:name])
-    ActionCable.server.broadcast 'chat_channel', message:params[:content]
+    # Message.create(content:params[:content],name:params[:name])
+    # ActionCable.server.broadcast 'chat_channel', message:params[:content]
     render :text => {success:true}.to_json, :layout => false
   end
 
   def get_all
-    logger.info "xxx"
-    logger.info ActionCable.server.channel_classes
-    logger.info "xxx"
+    # logger.info "xxx"
+    # logger.info ActionCable.server.channel_classes
+    # logger.info "xxx"
     json = {
         success:true,
         data: Message.all
