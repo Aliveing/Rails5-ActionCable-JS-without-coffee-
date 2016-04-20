@@ -96,6 +96,7 @@ function submit(button){
 window.onload = init;
 
 function init(){
+    document.querySelector('span#channel').innerHTML = arr;
     loadAll();
     //socket.close();
 }

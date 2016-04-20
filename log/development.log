@@ -14211,3 +14211,158 @@ Processing by ChatController#get_all as */*
 Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
 
 
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:25 +0800
+ChatChannel stopped streaming from ChatChannel3
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:25 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:25 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from ChatChannel1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:36 +0800
+ChatChannel stopped streaming from ChatChannel1
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:36 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:36 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:36 +0800
+Processing by ChatController#get_all as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from ChatChannel3
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:45 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:45 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:45 +0800
+Processing by ChatController#get_all as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from ChatChannel3
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:46 +0800
+ChatChannel stopped streaming from ChatChannel3
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:46 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:46 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:46 +0800
+Processing by ChatController#get_all as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+ChatChannel is transmitting the subscription confirmation
+  Rendered text template (0.0ms)
+ChatChannel is streaming from ChatChannel3
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+ChatChannel stopped streaming from ChatChannel3
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Processing by ChatController#get_all as */*
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered text template (0.0ms)
+ChatChannel is transmitting the subscription confirmation
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+ChatChannel is streaming from ChatChannel1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+ChatChannel stopped streaming from ChatChannel1
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Processing by ChatController#get_all as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from ChatChannel2
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+ChatChannel stopped streaming from ChatChannel2
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:47 +0800
+Processing by ChatController#get_all as */*
+ChatChannel is transmitting the subscription confirmation
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+ChatChannel is streaming from ChatChannel2
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+ChatChannel stopped streaming from ChatChannel2
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Processing by ChatController#get_all as */*
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered text template (0.0ms)
+ChatChannel is transmitting the subscription confirmation
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+ChatChannel is streaming from ChatChannel1
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+ChatChannel stopped streaming from ChatChannel1
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Processing by ChatController#get_all as */*
+ChatChannel is transmitting the subscription confirmation
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+ChatChannel is streaming from ChatChannel0
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+ChatChannel stopped streaming from ChatChannel0
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Processing by ChatController#get_all as */*
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from ChatChannel3
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+ChatChannel stopped streaming from ChatChannel3
+Started GET "/cable" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/chat/get_all" for 127.0.0.1 at 2016-04-20 13:35:48 +0800
+Processing by ChatController#get_all as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages`[0m
+  Rendered text template (0.0ms)
+ChatChannel is transmitting the subscription confirmation
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+ChatChannel is streaming from ChatChannel2
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:56 +0800
+ChatChannel stopped streaming from ChatChannel3
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:57 +0800
+ChatChannel stopped streaming from ChatChannel0
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:58 +0800
+ChatChannel stopped streaming from ChatChannel4
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:35:59 +0800
+ChatChannel stopped streaming from ChatChannel3
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2016-04-20 13:36:00 +0800
+ChatChannel stopped streaming from ChatChannel2
