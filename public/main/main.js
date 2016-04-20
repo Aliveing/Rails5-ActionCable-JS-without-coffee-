@@ -4,15 +4,19 @@
 
 var socket = (function(){
     var socket = new WebSocket('ws://localhost:3001/cable');
-
+    var initSocketObj = {
+        command:'subscribe',
+        identifier:"{\"channel\":\"ChatChannel\"}"
+    };
     socket.onopen = function(event){
-        socket.send();
+        console.log("onOpen =========> " + event);
+        socket.send(JSON.stringify(initSocketObj));
     };
     socket.onmessage = function(event){
-        console.log('receive a message');
+        console.log("onOpen =========> " + event.data);
     };
     socket.onclose = function(event){
-        console.log('E.., close.');
+        console.log("onOpen =========> " + 'E.., close.');
     };
     return socket;
 })();
@@ -65,7 +69,12 @@ function submit(button){
     var name = parent.querySelector('input[name=name]').value;
     var content = parent.querySelector('input[name=content]').value;
     var obj = {name:name, content:content};
-    socket.send(JSON.stringify(obj));
+    var simpleCableObj = {
+        identifier:'_ping',
+        command:'message',
+        data:obj
+    };
+    socket.send(JSON.stringify(simpleCableObj));
     //loadXMLDoc('post','/chat/create',{
     //    name:name,
     //    message:content

@@ -14,6 +14,9 @@ class ChatController < ApplicationController
   end
 
   def get_all
+    logger.info "xxx"
+    logger.info ActionCable.server.channel_classes
+    logger.info "xxx"
     json = {
         success:true,
         data: Message.all
