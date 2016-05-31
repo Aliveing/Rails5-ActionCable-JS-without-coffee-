@@ -24,4 +24,15 @@ class ChatController < ApplicationController
     render :plain => json.to_json, :layout => false
   end
 
+
+  def self.update_status
+    puts('xxxxxxxxxxxxxxx1')
+    puts('xxxxxxxxxxxxxxx2')
+    msg = {
+        content:"123",
+        refresh:true
+    }
+    ActionCable.server.broadcast 'ChatChannel', message:msg
+  end
+
 end

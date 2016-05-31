@@ -5,7 +5,8 @@ class ChatChannel < ApplicationCable::Channel
     puts "xxxxx"
     puts params.to_json
     puts "xxxxx"
-    stream_from params[:channel] + params[:sid].to_s
+    # stream_from params[:channel] + params[:sid].to_s
+    stream_from params[:channel]
   end
 
   def unsubscribed
@@ -21,6 +22,7 @@ class ChatChannel < ApplicationCable::Channel
         content:data["content"],
         refresh:true
     }
-    ActionCable.server.broadcast params[:channel] + params[:sid].to_s, msg
+    ActionCable.server.broadcast params[:channel], msg
+    # ActionCable.server.broadcast params[:channel] + params[:sid].to_s, msg
   end
 end
